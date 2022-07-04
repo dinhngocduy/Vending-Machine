@@ -1,0 +1,113 @@
+.revenue-statistics-container {
+  background-color: #fff;
+  padding: 2rem 2.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid #F0F0F0;  flex: 1;
+  .revenue-statistics-header {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1890ff;
+      border-bottom: 2px solid #1890ff;
+      margin-right: 13rem;
+      height: 3.5rem;
+    }
+
+    .option-btn {
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 0rem;
+      border-radius: 0.4rem;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        margin-right: 5rem;
+
+      .option-btn-item {
+        padding: 0 2rem;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #2d3540;
+        border: 0px solid rgba(45, 53, 64, 0.2);
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.active {
+          font-weight: 700;
+          color: #ff2d54;
+        }
+      }
+    }
+  }
+  .revenue-statistics-body {
+    display: flex;
+    flex-direction: "row";
+    height: 300px;
+
+    .left-component {
+      flex: 3;
+      padding-right: 8rem;
+    }
+    .right-component {
+      flex: 2;
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+      padding-top: 4.5rem;
+
+      .total-revenue-ctn {
+        padding: 2rem 4.5rem;
+        border: 1px solid #f0f0f0;
+        border-radius: 4px;
+        .right_title {
+          font-size: 1.4rem;
+          font-weight: 700;
+          color: #2d3540;
+          margin-bottom: 1rem;
+        }
+        .total-revenue {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #2d3540;
+          width: 100%;
+          text-align: center;
+          flex: 1;
+          margin-bottom: 1.4rem;
+          
+        }
+        .row-detail {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 1.6rem;
+          .label {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #69788c;
+            width: 40%;
+          }
+          .value {
+            color: #69788c;
+            font-weight: 700;
+            font-size: 1.4rem;
+            width: 20%;
+          }
+        }
+      }
+
+      .growth-value-ctn{
+        display: flex;
+        flex-direction: row;
+        .growth-value {
+            font-size: 1.3rem;
+            font-weight: 400;
+            color: #69788C;
+        }
+      }
+
+    }
+  }
+ 
+}

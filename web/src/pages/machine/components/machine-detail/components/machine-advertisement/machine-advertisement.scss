@@ -1,0 +1,47 @@
+.machine-advertisement-ctn {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.6rem;
+  .header {
+    display: flex;
+    margin-bottom: 1.6rem;
+    align-items: center;
+    .title {
+      font-size: 1.8rem;
+      color: #1a2948;
+      font-weight: 700;
+      flex: 1;
+    }
+  }
+  .banner_ctn {
+    background-color: #f5f8fb;
+    padding: 8px;
+    flex-wrap: wrap;
+    // justify-content: center;
+    display: flex;
+    flex: 1;
+    border-radius: 8px;
+    .item_banner {
+      width: 32%;
+      margin: 8px;
+      .banner_img {
+        width: 100%;
+      }
+      .icon_delete {
+        padding: 8px;
+        background-color: #ff4d54;
+        color: #fff;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        width: 100px;
+        margin-top: 10px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

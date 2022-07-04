@@ -1,0 +1,41 @@
+.product-ctn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .product-fiterbar {
+    background: #f5f8fb;
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    .product-filterbar__left {
+      display: flex;
+      justify-content: space-between;
+      width: 60%;
+    }
+    .product-filterbar__right {
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+    }
+  }
+
+  .product-manager-view {
+    background: #fff;
+    display: flex;
+    height: 100%;
+    flex: 1;
+    .listview {
+      flex: 1;
+    }
+  }
+
+  .product-image {
+    height: 16rem;
+    width: 16rem;
+    background-color: lightgray;
+    border-radius: 1.6rem;
+    object-fit: contain;
+  }
+}

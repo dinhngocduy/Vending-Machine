@@ -1,0 +1,93 @@
+@import "libraries/styles/mixin.scss";
+@import "libraries/styles/variables.scss";
+
+.slidebar {
+  box-sizing: border-box;
+  min-height: 800px;
+  height: 100vh;
+  background-color: #022e45;
+  color: #fff;
+  padding: 1.6rem;
+  width: 80px;
+  max-width: 260px;
+  min-width: 80px;
+  transition: 0.2s;
+
+  &.active {
+    min-width: 260px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+
+    &.active {
+      background-color: $white_10;
+      border-radius: 0.8rem;
+    }
+  }
+  .slidebar-header {
+    margin-bottom: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 3.2rem;
+    &.active {
+      justify-content: space-between;
+    }
+  }
+
+  .slidebar-menu-icon {
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  .slidebar-header-icon {
+    font-size: 2rem;
+    padding: auto;
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+}
+.slidebar.active {
+  .report-sidebar-dropdown-toggle {
+    position: relative;
+
+    a {
+      &.active {
+        background-color: #022e45;
+      }
+    }
+
+    &:after {
+      color: white;
+      content: url("../../assets/svg/coolicon.svg");
+      font-size: 16px;
+      position: absolute;
+      top: calc(50% - 12.5px);
+      right: 10px;
+      transition: transform 300ms;
+    }
+    
+    &.collapsed:after {
+      transform: rotate(180deg);
+      transition: transform 300ms;
+    }
+  }
+}
+
+.sidebar-dropdown-item {
+  display: none;
+}
+
+.slidebar.active .sidebar-dropdown-item.collapsed_entered {
+  display: block;
+}

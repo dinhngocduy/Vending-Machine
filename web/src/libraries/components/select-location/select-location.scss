@@ -1,0 +1,66 @@
+@import "libraries/styles/variables.scss";
+
+.select-location-ctn {
+  display: flex;
+  padding: 1.2rem 2rem;
+  align-items: flex-start;
+  //   width: 100%;
+  .select-location-label {
+    width: 35%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $neutral-midnight;
+    display: flex;
+    align-items: center;
+    p {
+      color: red;
+      margin-left: 4px;
+      align-content: center;
+      margin-bottom: 0;
+    }
+  }
+  .selection-loction-content {
+    flex: 1;
+  }
+  .option-ctn,
+  input {
+    flex: 1;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #e6e8eb;
+    height: 4rem;
+    font-size: 1.4rem;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+}
+.css-b62m3t-container {
+  flex: 1 !important;
+  padding: 0 !important;
+  margin-top: 1.5rem !important;
+}
+.css-1orcabs-control {
+  border: 1px solid #e6e8eb !important;
+}
+.css-14dclt2-Input {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.css-319lph-ValueContainer {
+  padding: 0 8px !important;
+  margin: 0 !important;
+}
+.css-14el2xx-placeholder {
+  font-size: 1.4rem !important;
+}
+.css-qc6sy-singleValue {
+  font-size: 1.4rem !important;
+  color: $neutral-midnight !important;
+}
+
+.css-1okebmr-indicatorSeparator {
+  display: none !important;
+}
+.css-1p11jy3 {
+  font-size: 1.4rem !important;
+}

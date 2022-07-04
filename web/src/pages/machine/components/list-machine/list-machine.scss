@@ -1,0 +1,27 @@
+.listview {
+  display: inline-block;
+  max-width: 25%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  border-right: 1px solid #e6e8eb;
+
+  a {
+    display: block;
+  }
+  .active {
+    background: #eef0f7;
+  }
+
+  .loading-ctn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.listview::-webkit-scrollbar {
+  display: none;
+}

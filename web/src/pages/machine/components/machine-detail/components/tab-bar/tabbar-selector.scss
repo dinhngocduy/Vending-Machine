@@ -1,0 +1,15 @@
+.tabbar-item {
+  padding: 1.4rem 2rem;
+  font-weight: 400;
+  :hover {
+    cursor: pointer;
+  }
+  &.active {
+    color: #00dad4;
+    border-bottom: 2px solid #00dad4;
+    font-weight: 700;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}

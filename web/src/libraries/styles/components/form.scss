@@ -1,0 +1,52 @@
+.form{
+    padding: 8px;
+    background-color: var(--color-main3);
+    overflow: auto;
+    // display: flex;
+    // flex-wrap: wrap;
+    box-shadow: var(--box-shadow-main); 
+
+    .general{
+        white-space: nowrap;
+        width: 45%;
+
+        &.table{
+
+            tr{
+
+                td{
+                    padding: 4px !important;
+                }
+            }
+
+            .table__title{
+                padding: 8px 0 12px 12px;
+            }
+        }
+
+
+
+        input{
+            // width: 300px;
+            // min-width: 150px !important;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    .form {
+    
+        .general{
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .form {
+    
+        .general{
+            width: 100%;
+        }
+    }
+}

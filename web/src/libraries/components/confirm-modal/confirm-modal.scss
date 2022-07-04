@@ -1,0 +1,53 @@
+@import "libraries/styles/variables.scss";
+
+.confirm-modal-ctn {
+  display: none;
+  &.open {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: $modal-background;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .confirm-modal-content {
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    .confirm-modal-header {
+      width: 100%;
+      border-bottom: 1px solid #e6e8eb;
+      align-items: center;
+      display: flex;
+      padding: 1.5rem 2rem;
+
+      p {
+        font-style: 1.8rem;
+        font-weight: 700;
+        color: $neutral-midnight;
+        flex: 1;
+        justify-self: center;
+        margin-bottom: 0;
+      }
+    }
+    .confirm-modal-body {
+      .confirm-modal-text {
+        padding: 3rem;
+      }
+      .confirm-modal-footer {
+        flex: 1;
+        display: flex;
+        padding: 3rem 10rem;
+        justify-content: space-between;
+        // padding: 2rem;
+      }
+    }
+  }
+}

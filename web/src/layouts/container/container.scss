@@ -1,0 +1,11 @@
+.root_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  .root_body {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+}

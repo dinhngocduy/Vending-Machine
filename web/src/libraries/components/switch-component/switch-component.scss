@@ -1,0 +1,26 @@
+@import "../../../libraries//styles/variables.scss";
+
+.switch-component-ctn {
+  display: flex;
+  padding: 1.2rem 2rem;
+  align-items: center;
+  .switch-component-label {
+    width: 35%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $neutral-midnight;
+    display: flex;
+    align-items: center;
+    p {
+      color: red;
+      margin-left: 4px;
+      align-content: center;
+      margin-bottom: 0;
+    }
+  }
+  .switch-component-value {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-left: 0.8rem;
+  }
+}

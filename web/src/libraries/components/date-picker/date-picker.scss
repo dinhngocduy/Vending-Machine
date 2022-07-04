@@ -1,0 +1,42 @@
+@import "libraries/styles/variables.scss";
+
+.date-picker-ctn {
+  display: flex;
+  padding: 0.8rem 1rem;
+  align-items: center;
+  border: 1px solid #e6e8eb;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  min-width: 30%;
+  p {
+    font-size: 1.4rem;
+    color: #99a0ad;
+    margin-bottom: 0;
+  }
+  .combobox__label {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .combobox__value {
+    min-width: 23rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    .value-option {
+      width: 100%;
+      border: none;
+      outline: none;
+      appearance: none;
+      color: $neutral-midnight;
+      &:hover{
+        cursor: pointer;
+      }
+      // background-color: #ffffff;
+    }
+  }
+  .combobox__icon {
+    font-size: 2rem;
+    right: 0;
+    margin: 0.6rem;
+  }
+}

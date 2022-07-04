@@ -1,0 +1,13 @@
+export enum ENUM_CONSTANT_NUMBER {
+  WIDTH_IPAD = 768,
+  HEIGHT_HEADER = 50,
+}
+
+export enum ENUM_CONSTANT_STRING {
+  // ERROR
+  MESSAGE_ERROR_INVALID_REFRENCE_NAME_MACHINE = "Chưa nhập tên tham khảo",
+  MESSAGE_ERROR_INVALID_TYPE_MACHINE = "Chưa chọn loại máy",
+  MESSAGE_ERROR_INVALID_MODEL_MACHINE = "Chưa chọn model máy",
+  MESSAGE_ERROR_INVALID_SERIAL_NUMBER_MACHINE = "Chưa nhập serial number",
+  MESSAGE_ERROR_INVALID_STATUS_MACHINE = "Chưa chọn trạng thái máy",
+}

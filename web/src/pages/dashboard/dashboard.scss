@@ -1,0 +1,33 @@
+.dashboard-container {
+  padding: 0rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  
+
+  .dashboard-header {
+    display: flex;
+    padding: 2.4rem 0;
+
+    .content {
+      line-height: 4rem;
+      .tittle {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 400;
+      }
+      .data {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .dashboard-chart-view {
+    flex: 1;
+    display: flex;
+    margin: 1rem 0;
+    // flex-wrap: wrap;
+  }
+}

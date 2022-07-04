@@ -1,0 +1,41 @@
+@import "../../../libraries/styles/mixin.scss";
+@import "../../../libraries/styles/variables.scss";
+
+.slidebar-item {
+  display: flex;
+  // margin-bottom: 2rem;
+  padding: 1.2rem 0 1.2rem 1.2rem;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+
+  &:hover {
+    background-color: $white_10;
+    border-radius: 0.8rem;
+  }
+  &.active {
+    // justify-content: flex-start;
+  }
+
+  .slidebar-item-titile {
+    margin-left: 5px;
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 0;
+    display: none;
+    overflow: hidden;
+    white-space: nowrap;
+    &.active {
+      display: flex;
+      margin-left: 2rem;
+      color: #fff;
+    }
+  }
+
+  .slidebar-item-icon {
+    // font-size: 2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    // margin-right: 1.6rem;
+  }
+}
