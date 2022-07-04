@@ -1,0 +1,24 @@
+.report-ctn {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .report-filterbar {
+    background: #f5f8fb;
+    box-sizing: border-box;
+    display: flex;
+    text-align: left;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    .report-filterbar__left {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .report-manager-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}

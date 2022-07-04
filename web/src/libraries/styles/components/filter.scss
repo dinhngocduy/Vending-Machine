@@ -1,0 +1,27 @@
+.filter{
+    background-color: var(--color-main);
+    width: 100%;
+    height: 56px;
+    color: #fff;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+
+    p {
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width:1024px){
+    .filter{
+        height: 50px;
+
+        button{
+
+            span{
+                display: none;
+            }
+        }
+    }
+}

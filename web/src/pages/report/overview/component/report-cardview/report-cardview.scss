@@ -1,0 +1,80 @@
+.report-card-view-ctn {
+  padding: 1.5rem 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 20%;
+  margin-right: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+  .report-card-view-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .report-card-view-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #9f9f9f;
+      margin-right: 1rem;
+    }
+
+    .report-card-view-header-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      &.value {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #6edb80;
+      }
+    }
+  }
+
+  .report-card-view-body {
+    width: 100%;
+    margin-top: 1rem;
+    .report-card-view-body-value {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #000;
+    }
+  }
+
+  .report-card-view-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+
+    .detail-text-btn {
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: #4080ff;
+      text-decoration: underline;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .money-icon {
+      padding: 0.8rem;
+      border-radius: 0.4rem;
+      background-color: #e4f8e8;
+    }
+  }
+}
+
+@media (max-width: 1230px) {
+  .report-card-view-ctn {
+    width: 30%;
+  }
+}
+@media (max-width: 860px) {
+  .report-card-view-ctn {
+    width: 46%;
+  }
+}

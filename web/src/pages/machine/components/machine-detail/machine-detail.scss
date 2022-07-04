@@ -1,0 +1,28 @@
+.machine-detail-ctn {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .machine-detail-tabbar {
+    display: flex;
+  }
+
+  .machine-detail-content {
+    flex: 1;
+  }
+
+  .empty-machine {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.loading-ctn{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}

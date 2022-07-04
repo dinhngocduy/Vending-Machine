@@ -1,0 +1,17 @@
+.root_container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  // .root_sideBar {
+  //   height: 100%;
+  // }
+  .root_body {
+    height: 100vh;
+    display: flex;
+    // width: 96%;
+    width: 100%;
+    flex-direction: column;
+    // position: absolute;
+    // left: 4%;
+  }
+}

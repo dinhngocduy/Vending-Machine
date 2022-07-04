@@ -1,0 +1,45 @@
+@import "libraries/styles/variables.scss";
+
+.combobox {
+  padding: 0.6rem 1.2rem;
+  background: #ffffff;
+  border: 1px solid #e6e8eb;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  margin-right: 1rem;
+  width: 40%;
+  .combobox-info {
+    flex: 1;
+  }
+
+  .combobox__label {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .combobox__value {
+    width: 100%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    .value-option {
+      width: 100%;
+      border: none;
+      outline: none;
+      appearance: none;
+      color: #99a0ad;
+      background-color: #ffffff;
+    }
+  }
+  .combobox__icon {
+    font-size: 2rem;
+    right: 0;
+    margin: 0.6rem;
+  }
+}
+@media (max-width: 860px) {
+  .combobox {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,82 @@
+.dashboard-container {
+  padding: 0rem 3.2rem;
+  display: flex;
+  flex-direction: column;
+  .dashboard-header {
+    display: flex;
+    padding: 2.4rem 0;
+    flex-wrap: wrap;
+    .content {
+      line-height: 4rem;
+      .tittle {
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 400;
+      }
+      .data {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.5rem;
+        text-align: left;
+      }
+    }
+  }
+
+  .dashboard-chart-view {
+    display: flex;
+    margin: 1rem 0;
+    // flex-wrap: wrap;
+    width: 97%;
+    .productChart {
+      width: 60%;
+    }
+    .paymentChart {
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 1600px) {
+  .dashboard-container {
+    .dashboard-header {
+      padding-right: 2%;
+    }
+  }
+}
+@media (max-width: 1270px) {
+  .dashboard-container {
+    padding-right: 2%;
+  }
+}
+@media (max-width: 1100px) {
+  .dashboard-container {
+    .dashboard-header {
+      .content {
+        .tittle {
+          font-size: 1.7rem;
+        }
+      }
+    }
+    .dashboard-chart-view {
+      flex-direction: column;
+      .productChart {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      .paymentChart {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 730px) {
+  .dashboard-container {
+    padding-left: 2%;
+    .dashboard-header {
+      .content {
+        .tittle {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}

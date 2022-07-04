@@ -1,0 +1,52 @@
+@import "libraries/styles/variables.scss";
+
+.sidebar-modal-ctn {
+  display: none;
+  &.open {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $modal-background;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .sidebar-modal-content {
+    height: 100%;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    .sidebar-modal-header {
+      width: 100%;
+      border-bottom: 1px solid #e6e8eb;
+      align-items: center;
+      display: flex;
+      padding: 1.5rem 2rem;
+
+      p {
+        font-style: 1.8rem;
+        font-weight: 700;
+        color: $neutral-midnight;
+        flex: 1;
+        justify-self: center;
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .sidebar-modal-body {
+    flex: 1;
+  }
+
+  .sidebar-modal-footer {
+    border-top: 1px solid #e6e8eb;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 20%;
+  }
+}

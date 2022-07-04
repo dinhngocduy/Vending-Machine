@@ -1,0 +1,10 @@
+@import "../../../libraries/styles/mixin.scss";
+@import "../../../libraries/styles/variables.scss";
+
+.body {
+  width: 100%;
+  height: 100%;
+  background-color: $primary-background;
+  overflow: scroll;
+  //   background-color: red;
+}

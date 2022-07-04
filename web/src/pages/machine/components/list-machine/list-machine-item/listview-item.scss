@@ -1,0 +1,19 @@
+.listview-item {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  p {
+    margin-left: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.listview-item:hover {
+  background: #eef0f7;
+  cursor: pointer;
+}

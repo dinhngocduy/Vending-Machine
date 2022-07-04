@@ -1,0 +1,5 @@
+export enum ENUM_GROUP_DETAIL_TAB {
+    GENERAL = "GENERAL",
+    INFOR = "INFOR",
+    PRODUCT_MAP = "PRODUCT_MAP"
+}
