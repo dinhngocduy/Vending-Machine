@@ -1,0 +1,49 @@
+.list{
+
+    .item{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        cursor: pointer;
+    
+        svg{
+            width: 18px;
+            height: 18px;
+            color: #5959a6;
+        }
+    
+        .img-12{
+            width: 12px;
+            height: 12px;
+        }
+    
+        .active{
+            color:#e55050;
+        }
+    
+        span{
+            white-space: nowrap;
+        }
+    
+        &.selected,
+        &.selected:hover{
+            color: #fff;
+            background-color: var(--color-main);
+    
+            > svg{
+                color: #fff ;
+    
+            }
+        }
+    
+        &:hover{
+            background-color: var(--color-item-hover);    
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.tabble-report-header {
+  padding: 1.6rem;
+  display: flex;
+  .card {
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    .content {
+      .tittle {
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: 400;
+      }
+      .data {
+        color: #fff;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: left;
+      }
+    }
+  }
+}

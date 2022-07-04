@@ -1,0 +1,18 @@
+.line-chart-ctn {
+  background-color: #fff;
+  padding: 1.4rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 1rem;
+  .line-chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+  }
+}

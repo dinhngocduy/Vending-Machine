@@ -1,0 +1,161 @@
+@import "../../libraries/styles/mixin.scss";
+@import "../../libraries/styles/variables.scss";
+
+$mobile-width: 480px;
+$small-tablet-width: 768px;
+$big-tablet-width: 1024px;
+$laptop-width: 1200px;
+
+@mixin pc {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin big-tablet {
+  @media (min-width: #{$small-tablet-width}) and (max-width: #{$big-tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media (min-width: #{$mobile-width}) and (max-width: #{$small-tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.logo {
+  min-height: 53px;
+}
+
+.login {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  // background-color: $primary;
+  &__background {
+    background: url("./../../assets/images/login_bg_image.png") center center /
+      cover no-repeat;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile() {
+      display: none;
+    }
+
+    @include small-tablet() {
+      display: none;
+    }
+  }
+
+  &__form {
+    background: white;
+
+    width: 480px;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 80px 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include small-tablet() {
+      width: 100%;
+      padding: 80px 60px;
+    }
+
+    @include mobile() {
+      width: 100%;
+      padding: 60px 20px;
+    }
+
+    &__text {
+      margin-top: 69px;
+      @include formatText(28px, $font-weight-700, $neutral-midnight);
+    }
+  }
+}
+
+.input-container {
+  margin-top: 24px;
+  width: 100%;
+
+  &__label {
+    @include formatText($font-size-base, $font-weight-700, $neutral-midnight);
+    margin-bottom: 4px;
+  }
+}
+
+.label-login-err {
+  color: $semantic-error-persian-red;
+  padding: 1rem;
+}
+
+.language-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.language-button {
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px;
+
+  &__text {
+    color: #4d5971;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+  }
+
+  &:hover {
+    border: 1px solid #4080ff;
+  }
+
+  img {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+.button-container {
+  width: 100%;
+}
+
+.button {
+  margin-top: 36px;
+  margin-bottom: 56px;
+}

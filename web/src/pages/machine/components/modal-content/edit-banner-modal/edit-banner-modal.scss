@@ -1,0 +1,14 @@
+.container {
+  padding: 16px;
+  .add-image-moadl-content-header {
+    display: flex;
+  }
+  .input-file-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .display-img{
+    width: 70%;
+  }
+}

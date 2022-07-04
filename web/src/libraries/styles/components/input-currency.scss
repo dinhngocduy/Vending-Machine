@@ -1,0 +1,17 @@
+.input-currency{
+    position: relative;
+
+    &::after{
+        content: "VND";
+        position: absolute;
+        top: 50%;
+        right: -54px;
+        transform: translate(-50% , -50%);
+        color: rgb(160, 148, 148);
+        font-size:16px; 
+        -webkit-transform: translate(-50% , -50%);
+        -moz-transform: translate(-50% , -50%);
+        -ms-transform: translate(-50% , -50%);
+        -o-transform: translate(-50% , -50%);
+    }
+}

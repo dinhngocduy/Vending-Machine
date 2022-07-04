@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "897117527323",
+    "project_id": "vending-machine-21309",
+    "storage_bucket": "vending-machine-21309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897117527323:android:6ccbb87dc7be42445c07be",
+        "android_client_info": {
+          "package_name": "com.vendingmachine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897117527323-8uc4dvaj9d0jvp61ithhjj58hkvpbq4c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vendingmachine",
+            "certificate_hash": "5b7bc8aa674dbce662836ef8e8c3ffcd17e9b105"
+          }
+        },
+        {
+          "client_id": "897117527323-b6a7fk88ee3trdvfi026jirjkob5b54h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDLdrW8mzaEoGBeUJ0SHF-DBNOJaq_img"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897117527323-b6a7fk88ee3trdvfi026jirjkob5b54h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

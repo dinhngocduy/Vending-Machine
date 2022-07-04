@@ -1,0 +1,30 @@
+.list{
+    background-color: var(--color-main3);
+    height: 100%;
+    padding: 8px 8px 0 8px;
+    position: relative;
+    box-shadow: var(--box-shadow-main); 
+    width: 100% ;
+    max-width: 260px;
+   
+
+    .wrapper{
+        overflow: auto;
+        height: 100%;
+    }
+}
+
+@media only screen and (width:768px){
+    .list{
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .list{
+        position: absolute;
+        top: 0;
+        width: 200px;
+        z-index: 1000;
+    }
+}

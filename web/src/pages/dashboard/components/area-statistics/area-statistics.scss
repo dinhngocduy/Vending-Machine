@@ -1,0 +1,25 @@
+.area-statistics-container {
+  background-color: #fff;
+  padding: 2rem 2.6rem;
+  border-radius: 0.8rem;
+  border: 1px solid #f0f0f0;
+  flex: 1;
+  height: 40rem;
+  .area-statistics-header {
+    display: flex;
+    flex-direction: row;
+    // align-items: center;
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1890ff;
+      border-bottom: 2px solid #1890ff;
+      margin-right: 13rem;
+      height: 3.5rem;
+    }
+  }
+  .area-statistics-body {
+    width: 95%;
+  }
+}

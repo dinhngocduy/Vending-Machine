@@ -1,0 +1,43 @@
+
+
+.circle-top{
+    box-sizing: border-box;
+    position: absolute;
+    height: 25rem;
+    width: 50%;
+    background-color: none;
+    border: 4rem;
+
+    border-radius: 50%;
+    opacity: 0.34;
+
+    left: 50%;
+    bottom: 50%;
+
+    background: linear-gradient(to right, #FFFFFF, rgba(255, 255, 255, 0.17));
+    background-origin: border-box;
+    background-repeat: no-repeat; /* this is important */
+    border: 4rem solid transparent;
+}
+
+
+
+.circle-bottom{
+    box-sizing: border-box;
+    position: absolute;
+    height: 25rem;
+    width: 50%;
+    background-color: none;
+    border: 4rem;
+
+    border-radius: 50%;
+    opacity: 0.34;
+
+    left: 0%;
+    top: 70%;
+
+    background: linear-gradient(to right, #FFFFFF, rgba(255, 255, 255, 0.17));
+    background-origin: border-box;
+    background-repeat: no-repeat; /* this is important */
+    border: 4rem solid transparent;
+}

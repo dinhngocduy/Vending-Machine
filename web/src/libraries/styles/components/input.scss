@@ -1,0 +1,22 @@
+@import '../variables.scss';
+@import '../mixin.scss';
+
+.input {
+    width: 100%;
+    border: 1px solid #E6E8EB;
+    height: 44px;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: "border-box";
+    @include formatText($font-size-base, $font-weight-400, $neutral-midnight);
+}
+
+.password {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}

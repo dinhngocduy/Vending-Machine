@@ -1,0 +1,7 @@
+@import './variables.scss';
+
+@mixin formatText($fontSize: $font-size-base, $fontWeight:$font-weight-400, $color: $neutral-white) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    color: $color;
+}
